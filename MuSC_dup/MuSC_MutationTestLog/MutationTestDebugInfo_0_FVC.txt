@@ -1,0 +1,33 @@
+
+C:\Users\ramah\personal-projects\MuSC-Tool-Demo-repo>cd /d C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup 
+
+C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup>truffle test 
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Arthmetic.sol
+> Compiling .\contracts\Migrations.sol
+> Artifacts written to C:\Users\ramah\AppData\Local\Temp\test--24444-ldjVZeit9oUg
+> Compiled successfully using:
+   - solc: 0.5.5+commit.47a71e8f.Emscripten.clang
+
+
+[0m[0m
+[0m  Contract: Arthmetic[0m
+  [32m  √[0m[90m Check for Set Data[0m
+  [32m  √[0m[90m Check for Invalid Set Data[0m
+  [31m  1) Check for Set Data[0m
+    > No events were emitted
+
+
+[92m [0m[32m 2 passing[0m[90m (2s)[0m
+[31m  1 failing[0m
+
+[0m  1) Contract: Arthmetic
+       Check for Set Data:
+[0m[31m     TypeError: ar.f is not a function[0m[90m
+      at Context.<anonymous> (test\Arthmetic.js:28:8)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[0m
+
+

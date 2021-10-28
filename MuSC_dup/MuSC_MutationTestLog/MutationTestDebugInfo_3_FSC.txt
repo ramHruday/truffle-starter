@@ -1,0 +1,17 @@
+
+C:\Users\ramah\personal-projects\MuSC-Tool-Demo-repo>cd /d C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup 
+
+C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup>truffle test 
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Arthmetic.sol
+> Compiling .\contracts\Migrations.sol
+
+project:/contracts/Arthmetic.sol:3:34: ParserError: The state mutability modifier "constant" was removed in version 0.5.0. Use "view" or "pure" instead.
+    function f(uint256 a) public constant  returns(uint256 b) {
+                                 ^------^
+
+[31mCompilation failed. See above.[39m
+Truffle v5.4.11 (core: 5.4.11)
+Node v14.17.6

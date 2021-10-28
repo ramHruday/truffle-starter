@@ -1,0 +1,40 @@
+
+C:\Users\ramah\personal-projects\MuSC-Tool-Demo-repo>cd /d C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup 
+
+C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup>truffle test 
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\Arthmetic.sol
+> Compiling .\contracts\Migrations.sol
+> Artifacts written to C:\Users\ramah\AppData\Local\Temp\test--24680-YsZJNyMidko7
+> Compiled successfully using:
+   - solc: 0.5.5+commit.47a71e8f.Emscripten.clang
+
+
+[0m[0m
+[0m  Contract: Arthmetic[0m
+  [31m  1) Check for Set Data[0m
+    > No events were emitted
+  [31m  2) Check for Invalid Set Data[0m
+    > No events were emitted
+  [32m  √[0m[90m Check for Set Data[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (1s)[0m
+[31m  2 failing[0m
+
+[0m  1) Contract: Arthmetic
+       Check for Set Data:
+[0m[31m     TypeError: ar.setData is not a function[0m[90m
+      at Context.<anonymous> (test\Arthmetic.js:12:8)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[0m
+[0m  2) Contract: Arthmetic
+       Check for Invalid Set Data:
+[0m[31m     TypeError: ar.setData is not a function[0m[90m
+      at Context.<anonymous> (test\Arthmetic.js:20:8)
+      at processTicksAndRejections (internal/process/task_queues.js:95:5)
+[0m
+
+
