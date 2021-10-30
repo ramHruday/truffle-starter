@@ -1,0 +1,58 @@
+const ESCSpecificTwo = artifacts.require("ESCSpecificTwo");
+const assert = require("assert");
+
+contract("ESCSpecificTwo", function (accounts) {
+  let cntrct;
+  beforeEach(async () => {
+    cntrct = await ESCSpecificTwo.new(100);
+  });
+
+  // Send Half Balance
+  it("Check Sending Half Balance", async function () {
+    await cntrct.sendHalfBalance(accounts[1], {
+      value: 40,
+    });
+    const b = await cntrct.contractBalance();
+    const aB = await web3.eth.getBalance(accounts[1]);
+    assert.equal(b.toNumber(), 80, "Sending Half Balance failed");
+    assert.equal(aB, 100000000000000000020, "Sending Half Balance failed");
+  });
+
+  it("Check Updating contract balance", async function () {
+    await cntrct.updateContractBal(200, 1);
+    const b = await cntrct.contractBalance();
+    assert.equal(b.toNumber(), 200, "Updating contract balance failed");
+  });
+
+  it("Check contract balance by sending in wei", async function () {
+    await cntrct.updateContractBal(2, 2);
+    const b = await cntrct.contractBalance();
+    const f = web3.utils.toWei("2", "finney");
+    assert.equal(
+      f,
+      b.toNumber(),
+      "Updating contract balance by sending in wei failed"
+    );
+  });
+
+  it("Check contract balance by sending in szabo", async function () {
+    await cntrct.updateContractBal(1, 4);
+    const b = await cntrct.contractBalance();
+    const f = web3.utils.toWei("1", "szabo");
+    assert.equal(
+      f,
+      b.toNumber(),
+      "Updating contract balance by sending in szabo failed"
+    );
+  });
+
+  it("Check contract balance by sending in undefined numb", async function () {
+    let b = 0;
+    try {
+      await cntrct.updateContractBal(200, 5);
+      b = await cntrct.contractBalance();
+    } catch (error) {
+      assert.equal(0, b, "Updating contract balance failed");
+    }
+  });
+});

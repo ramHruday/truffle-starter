@@ -1,0 +1,65 @@
+
+C:\Users\ramah\personal-projects\MuSC-Tool-Demo-repo>cd /d C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup 
+
+C:\Users\ramah\personal-projects\musc-testing-r2-custom\MuSC_dup>truffle test 
+Using network 'test'.
+
+
+Compiling your contracts...
+===========================
+> Compiling .\contracts\EscMutation.sol
+> Compiling .\contracts\Migrations.sol
+> Compilation warnings encountered:
+
+    project:/contracts/EscMutation.sol:14:28: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForSzabo(uint256 a, uint256 b) public returns(uint256) {
+                           ^-------^
+,project:/contracts/EscMutation.sol:14:39: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForSzabo(uint256 a, uint256 b) public returns(uint256) {
+                                      ^-------^
+,project:/contracts/EscMutation.sol:40:29: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForFinney(uint256 a, uint256 b) public returns(uint256) {
+                            ^-------^
+,project:/contracts/EscMutation.sol:40:40: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForFinney(uint256 a, uint256 b) public returns(uint256) {
+                                       ^-------^
+,project:/contracts/EscMutation.sol:47:26: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForWei(uint256 a, uint256 b) public returns(uint256) {
+                         ^-------^
+,project:/contracts/EscMutation.sol:47:37: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForWei(uint256 a, uint256 b) public returns(uint256) {
+                                    ^-------^
+,project:/contracts/EscMutation.sol:54:28: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForEther(uint256 a, uint256 b) public returns(uint256) {
+                           ^-------^
+,project:/contracts/EscMutation.sol:54:39: Warning: Unused function parameter. Remove or comment out the variable name to silence this warning.
+    function checkForEther(uint256 a, uint256 b) public returns(uint256) {
+                                      ^-------^
+,project:/contracts/EscMutation.sol:14:5: Warning: Function state mutability can be restricted to view
+    function checkForSzabo(uint256 a, uint256 b) public returns(uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,project:/contracts/EscMutation.sol:21:5: Warning: Function state mutability can be restricted to pure
+    function updateContractBal(uint256 a, uint256 cashType) public returns(uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,project:/contracts/EscMutation.sol:40:5: Warning: Function state mutability can be restricted to view
+    function checkForFinney(uint256 a, uint256 b) public returns(uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,project:/contracts/EscMutation.sol:47:5: Warning: Function state mutability can be restricted to view
+    function checkForWei(uint256 a, uint256 b) public returns(uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+,project:/contracts/EscMutation.sol:54:5: Warning: Function state mutability can be restricted to view
+    function checkForEther(uint256 a, uint256 b) public returns(uint256) {
+    ^ (Relevant source part starts here and spans across multiple lines).
+
+> Artifacts written to C:\Users\ramah\AppData\Local\Temp\test--9204-qJWUMMA8LaBK
+> Compiled successfully using:
+   - solc: 0.5.5+commit.47a71e8f.Emscripten.clang
+
+
+[0m[0m
+[0m  Contract: ESCSpecific[0m
+  [32m  √[0m[90m Check Sending Half Balance[0m
+
+
+[92m [0m[32m 1 passing[0m[90m (469ms)[0m
+
