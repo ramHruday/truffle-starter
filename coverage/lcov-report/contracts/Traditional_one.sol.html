@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for contracts\Traditional_one.sol</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">contracts/</a> Traditional_one.sol
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>0/35</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/14</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>0/4</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">0% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>0/33</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">pragma solidity ^0.5.5;
+&nbsp;
+contract TraditionalOne {
+    uint256 public data;
+    uint256[] public arr = [10, 7, 9, 6];
+&nbsp;
+    //statement deletion
+<span class="fstat-no" title="function not covered" >    function sort() public {</span>
+<span class="cstat-no" title="statement not covered" >        uint256 length = arr.length;</span>
+<span class="cstat-no" title="statement not covered" >        for (uint256 i = 0; i &lt; length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >            for (uint256 j = i + 1; j &lt; length; j++) {</span>
+<span class="cstat-no" title="statement not covered" >                if (arr[i] &gt; arr[j]) {</span>
+<span class="cstat-no" title="statement not covered" >                    uint256 temp = arr[i];</span>
+<span class="cstat-no" title="statement not covered" >                    arr[i] = arr[j]</span>;
+<span class="cstat-no" title="statement not covered" >                    arr[j] = temp</span>;
+                }
+            }
+        }
+    }
+&nbsp;
+    //
+    /*
+	function  indexOfInt(uint256[10] memory  a,  uint256 b) public{
+        uint256 i = 0;
+        for(i; i &lt; uint256(a.length) ; i++)
+        {
+            if(a[i] == b)
+                data = i;
+        }
+    }*/
+<span class="fstat-no" title="function not covered" >    function indexOfInt(uint256 b) public {</span>
+<span class="cstat-no" title="statement not covered" >        uint256 i = 0;</span>
+<span class="cstat-no" title="statement not covered" >        for (i; i &lt; arr.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >            if (arr[i] == b) <span class="cstat-no" title="statement not covered" >data = i</span>;</span>
+        }
+    }
+&nbsp;
+    //logical Operator Change
+<span class="fstat-no" title="function not covered" >    function indexOf(string memory string1, string memory string2)</span>
+        public
+        pure
+        returns (int256)
+    {
+<span class="cstat-no" title="statement not covered" >        bytes memory a = bytes(string1);</span>
+<span class="cstat-no" title="statement not covered" >        bytes memory b = bytes(string2);</span>
+<span class="cstat-no" title="statement not covered" >        uint256 aLength = a.length;</span>
+<span class="cstat-no" title="statement not covered" >        uint256 bLength = b.length;</span>
+<span class="cstat-no" title="statement not covered" >        return -1;</span>
+&nbsp;
+<span class="cstat-no" title="statement not covered" >        if (aLength &lt; 1 || bLength &lt; 1 || (bLength &gt; aLength)) {</span>
+<span class="cstat-no" title="statement not covered" >            return -1;</span>
+        } else {
+<span class="cstat-no" title="statement not covered" >            uint256 index = 0;</span>
+<span class="cstat-no" title="statement not covered" >            for (uint256 i = 0; i &lt; aLength; i++) {</span>
+<span class="cstat-no" title="statement not covered" >                if (a[i] == b[0]) {</span>
+<span class="cstat-no" title="statement not covered" >                    index = 1</span>;
+<span class="cstat-no" title="statement not covered" >                    while (</span>
+                        index &lt; bLength &amp;&amp;
+                        (i + index) &lt; aLength &amp;&amp;
+                        a[i + index] == b[index]
+                    ) {
+                        index++;
+                    }
+<span class="cstat-no" title="statement not covered" >                    if (index == bLength) {</span>
+<span class="cstat-no" title="statement not covered" >                        return int256(i);</span>
+                    }
+                }
+            }
+<span class="cstat-no" title="statement not covered" >            return -1;</span>
+        }
+    }
+&nbsp;
+<span class="fstat-no" title="function not covered" >    function getRange() public {</span>
+<span class="cstat-no" title="statement not covered" >        uint256 i = 0;</span>
+<span class="cstat-no" title="statement not covered" >        uint256 high = 1;</span>
+<span class="cstat-no" title="statement not covered" >        uint256 low = 9999;</span>
+<span class="cstat-no" title="statement not covered" >        for (i; i &lt; arr.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >            if (arr[i] &gt; high) <span class="cstat-no" title="statement not covered" >high = arr[i]</span>;</span>
+<span class="cstat-no" title="statement not covered" >            if (arr[i] &lt; low) <span class="cstat-no" title="statement not covered" >low = arr[i]</span>;</span>
+        }
+<span class="cstat-no" title="statement not covered" >        data = high - low</span>;
+    }
+&nbsp;
+    /*
+    //conditional operator change
+    function getUint8FromByte32(bytes32 _b32, uint8 byteindex) public  {
+&nbsp;
+    	uint numdigits = 64;
+    	uint buint = uint(_b32);
+    	uint upperpowervar = 16 ** (numdigits - (byteindex*2)); 		
+    	uint lowerpowervar = 16 ** (numdigits - 2 - (byteindex*2));		
+    	uint postheadchop;
+        byteindex == 0 ? (postheadchop = buint) : (postheadchop = buint % upperpowervar);				
+    	uint remainder = postheadchop % lowerpowervar; 			
+    	uint evenedout = postheadchop - remainder; 				
+    	uint b = evenedout / lowerpowervar; 
+		data = uint256(b);
+        //return uint8(b);					
+    }*/
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Sun Oct 31 2021 21:25:57 GMT-0500 (Central Daylight Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
