@@ -39,35 +39,35 @@ contract ESCSpecificTwo {
         contractBalance = cash;
     }
 
-    function checkForSzabo() public view returns (uint256) {
-        if (contractBalance >= 70 szabo) {
-            uint256 sendProfit = contractBalance;
-            return sendProfit;
-        }
-        return 0;
-    }
+    // function checkForSzabo() public view returns (uint256) {
+    //     if (contractBalance >= 70 szabo) {
+    //         uint256 sendProfit = contractBalance;
+    //         return sendProfit;
+    //     }
+    //     return 0;
+    // }
 
-    function checkForFinney() public view returns (uint256) {
-        if (contractBalance >= 70 finney) {
-            uint256 sendProfit = contractBalance;
-            return sendProfit;
-        }
-        return 0;
-    }
+    // function checkForFinney() public view returns (uint256) {
+    //     if (contractBalance >= 70 finney) {
+    //         uint256 sendProfit = contractBalance;
+    //         return sendProfit;
+    //     }
+    //     return 0;
+    // }
 
-    function checkForWei() public view returns (uint256) {
-        if (contractBalance >= 70 wei) {
-            uint256 sendProfit = contractBalance;
-            return sendProfit;
-        }
-        return 0;
-    }
+    // function checkForWei() public view returns (uint256) {
+    //     if (contractBalance >= 70 wei) {
+    //         uint256 sendProfit = contractBalance;
+    //         return sendProfit;
+    //     }
+    //     return 0;
+    // }
 
-    function checkForEther() public view returns (uint256) {
-        if (contractBalance >= 70 ether) {
-            uint256 sendProfit = contractBalance;
-            return sendProfit;
-        }
-        return 0;
-    }
+    // function checkForEther() public view returns (uint256) {
+    //     if (contractBalance >= 70 ether) {
+    //         uint256 sendProfit = contractBalance;
+    //         return sendProfit;
+    //     }
+    //     return 0;
+    // }
 }

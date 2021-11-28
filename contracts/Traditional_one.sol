@@ -5,18 +5,18 @@ contract TraditionalOne {
     uint256[] public arr = [10, 7, 9, 6];
 
     //statement deletion
-    function sort() public {
-        uint256 length = arr.length;
-        for (uint256 i = 0; i < length; i++) {
-            for (uint256 j = i + 1; j < length; j++) {
-                if (arr[i] > arr[j]) {
-                    uint256 temp = arr[i];
-                    arr[i] = arr[j];
-                    arr[j] = temp;
-                }
-            }
-        }
-    }
+    // function sort() public {
+    //     uint256 length = arr.length;
+    //     for (uint256 i = 0; i < length; i++) {
+    //         for (uint256 j = i + 1; j < length; j++) {
+    //             if (arr[i] > arr[j]) {
+    //                 uint256 temp = arr[i];
+    //                 arr[i] = arr[j];
+    //                 arr[j] = temp;
+    //             }
+    //         }
+    //     }
+    // }
 
     //
     /*

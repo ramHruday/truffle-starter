@@ -7,21 +7,21 @@ contract("TraditionalOne", function () {
     cntrct = await TraditionalOne.new();
   });
 
-  it("Check Sort", async function () {
-    cntrct.sort().then(() => {
-      cntrct.arr(1).then((d) => {
-        assert.equal(7, d.toNumber(), "Set data failed");
-      });
-    });
-  });
+  // it("Check Sort", async function () {
+  //   cntrct.sort().then(() => {
+  //     cntrct.arr(1).then((d) => {
+  //       assert.equal(7, d.toNumber(), "Set data failed");
+  //     });
+  //   });
+  // });
 
-  it("Check for IndexoOInt", async function () {
-    cntrct.indexOfInt(9).then(() => {
-      cntrct.data().then((d) => {
-        assert.equal(2, d, "IndexofInt failed");
-      });
-    });
-  });
+  // it("Check for IndexoOInt", async function () {
+  //   cntrct.indexOfInt(9).then(() => {
+  //     cntrct.data().then((d) => {
+  //       assert.equal(2, d, "IndexofInt failed");
+  //     });
+  //   });
+  // });
 
   it("Check for getRange", async function () {
     cntrct.getRange().then(() => {
@@ -46,11 +46,11 @@ contract("TraditionalOne", function () {
       });
     });
   });*/
-  it("Check Sort2", async function () {
-    cntrct.sort().then(() => {
-      cntrct.arr(1).then((d) => {
-        assert.equal(7, d.toNumber(), "Set data failed");
-      });
-    });
-  });
+  // it("Check Sort2", async function () {
+  //   cntrct.sort().then(() => {
+  //     cntrct.arr(1).then((d) => {
+  //       assert.equal(7, d.toNumber(), "Set data failed");
+  //     });
+  //   });
+  // });
 });
