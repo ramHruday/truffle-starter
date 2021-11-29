@@ -28,12 +28,6 @@ contract TraditionalOne {
                 data = i;
         }
     }*/
-    function indexOfInt(uint256 b) public {
-        uint256 i = 0;
-        for (i; i < arr.length; i++) {
-            if (arr[i] == b) data = i;
-        }
-    }
 
     //logical Operator Change
     function indexOf(string memory string1, string memory string2)

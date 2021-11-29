@@ -7,10 +7,10 @@ contract("ESCSpecificOne", function (accounts) {
     cntrct = await ESCSpecificOne.new();
   });
 
-  it("Check deleting a variable", async function () {
-    const b = await cntrct.deleteVariable(7);
-    assert.equal(b, 0, "deleting a variable failed");
-  });
+  // it("Check deleting a variable", async function () {
+  //   const b = await cntrct.deleteVariable(7);
+  //   assert.equal(b, 0, "deleting a variable failed");
+  // });
 
   it("Check get now timestamp", async function () {
     const b = await cntrct.getNow();

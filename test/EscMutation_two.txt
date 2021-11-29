@@ -4,19 +4,19 @@ const assert = require("assert");
 contract("ESCSpecificTwo", function (accounts) {
   let cntrct;
   beforeEach(async () => {
-    cntrct = await ESCSpecificTwo.new(100);
+    cntrct = await ESCSpecificTwo.new(600000);
   });
 
   // Send Half Balance
-  it("Check Sending Half Balance", async function () {
-    await cntrct.sendHalfBalance(accounts[1], {
-      value: 40,
-    });
-    const b = await cntrct.contractBalance();
-    const aB = await web3.eth.getBalance(accounts[1]);
-    assert.equal(b.toNumber(), 80, "Sending Half Balance failed");
-    assert.equal(aB, 100000000000000000020, "Sending Half Balance failed");
-  });
+  // it("Check Sending Half Balance", async function () {
+  //   await cntrct.sendHalfBalance(accounts[1], {
+  //     value: 2,
+  //   });
+  //   const b = await cntrct.contractBalance();
+  //   const aB = await web3.eth.getBalance(accounts[1]);
+  //   assert.equal(b.toNumber(), 2, "Sending Half Balance failed");
+  //   assert.equal(aB, 20, "Sending Half Balance failed");
+  // });
 
   it("Check Updating contract balance", async function () {
     await cntrct.updateContractBal(200, 1);

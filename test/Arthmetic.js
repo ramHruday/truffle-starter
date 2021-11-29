@@ -41,6 +41,7 @@ contract("Arthmetic", function () {
     d = await cntrct.data();
     assert.equal(2, d.toNumber(), "compare sums failed ");
   });
+
   // it("Check for pwr2", async () => {
   //   cntrct.pwr(3, 2).then(() => {
   //     cntrct.data().then((d) => {

@@ -11,11 +11,11 @@ contract MutationOperatorsTwo {
     Item[] public items;
 
     function sum(uint256 count) public pure returns (uint256) {
-        uint256 sum = 0;
+        uint256 s = 0;
         for (uint256 i = 0; i < count; i++) {
-            sum = sum + i;
+            s = s + i;
         }
-        return sum;
+        return s;
     }
 
     function setUsingMemory(uint256 _itemIdx, uint256 _units) public view {
